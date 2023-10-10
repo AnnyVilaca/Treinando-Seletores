@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    
+    height: 100vh;
+    background-color: rgb(107, 105, 105);
+}
+
+h1   {
+    font: bold italic 3em Arial;
+    color:#F2DA00;
+    text-shadow: 3px 3px 3px black;
+}
+
+span { 
+    color:#992D87;
+}
+
+div#geral > div {
+    box-sizing: border-box;
+
+    background-color: rgb(252, 52, 52);
+    border: 1px solid white;
+    width: 200px;
+    height: 200px;
+}
+
+div#geral > div.azul {
+    background-color: rgb(97, 172, 202);
+}
+
+div#geral > div.amarelo {
+    background-color: rgb(255, 255, 88);
+}
+
+div#geral > div.verde {
+    background-color: rgb(91, 161, 91);
+}
+
+div#geral {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-gap: 0;
+}
+
+div#geral > div.borda {
+    border: 1px solid black;
+}
+    
+div#geral > div.esquerdaBorda {
+    border-right: 1px solid black;
+}
+
+div#geral > div.direitaBorda {
+    border-left: 1px solid black;
+}
+
+div#geral > div.cimaBorda {
+    border-bottom: 1px solid black;
+}
+
+div#geral > div.baixoBorda {
+    border-top: 1px solid black;
+}
